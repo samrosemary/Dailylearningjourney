@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Learning Diary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <h1>Daily Learning Diary</h1>
+
+    <div class="entry-container">
+        <label>Select a date:</label>
+        <input type="date" id="entryDate">
+
+        <label>Notes for the day:</label>
+        <textarea id="notes" placeholder="What did you learn today?"></textarea>
+
+        <label>Upload images:</label>
+        <input type="file" id="images" multiple accept="image/*">
+
+        <div id="imagePreview"></div>
+
+        <button id="saveBtn">Save Entry</button>
+        <button id="deleteBtn">Delete Entry</button>
+        <button id="pdfBtn">Download PDF Report</button>
+
+        <a href="gallery.html" class="gallery-link">View Gallery Timeline</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
